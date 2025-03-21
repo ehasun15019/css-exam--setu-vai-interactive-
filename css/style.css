@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --primary-color: #FFF3E3;
+    --second-color: #FAF3EA;
+    --cart-table-color: #F9F1E7;
+    --button-color: #B88E2F;
+}
+
+
+/* nav start */
+nav .navbar-toggler:focus
+{
+    outline: none;
+    box-shadow: none;
+}
+
+nav form img 
+{
+    width: 20px;
+}
+
+.navbar-nav a 
+{
+    font-weight: 600;
+}
+
+#offcanvasNavbarLabel img 
+{
+    width: 150px;
+}
+/* nav end */
+
+
+/* hero start */
+#hero
+{
+    background-image: url('../img/hero-background.jpg');
+    background-repeat: no-repeat;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.new-arrival-sec 
+{
+    background: var(--primary-color);
+    max-width: 470px;
+    width: 100%;
+    padding: 30px 18px;
+    border-radius: 10px;
+    position: sticky;
+    top: 175px;
+    right: 175px;
+}
+
+.new-arrival-sec h6 
+{
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+}
+
+.new-arrival-sec h3 
+{
+    color: var(--button-color);
+    font-weight: 700;
+}
+
+.new-arrival-sec a
+{
+    background: var(--button-color);
+    padding: 13px 39px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+/* hero end */
+
+
+/* browse start */
+.browse .card {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.browse .card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 150%;
+    height: 150%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);
+    
+    transform: skewX(-25deg);
+    transition: all 0.6s ease-in-out;
+    opacity: 0;
+}
+
+.browse .card:hover::before {
+    top: 100%;
+    left: 100%;
+    opacity: 1;
+}
+/* browse end */
+
+
+
+/* product start */
+.product .card 
+{
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product .card-body 
+{
+    background: #F4F5F7;
+}
+
+.product .card img
+{
+    -webkit-transition: .3s ease-in-out;
+    transition: 0.3 ease-in-out;
+}
+
+.product .card:hover img 
+{
+    transform: scale(1.1);
+}
+
+.product .card .overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product .card:hover .overlay  
+{
+    opacity: 1;
+}
+
+.product .card .card-content 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product .card:hover .card-content 
+{
+    opacity: 1;
+}
+
+.product .card .card-content a 
+{
+    padding: 10px 15px;
+    color: var(--button-color);
+    text-decoration: none;
+    background: #fff;
+}
+
+.product .card .share-content 
+{
+    display: flex;
+    gap: 15px;
+}
+
+
+.product .card .share-content p
+{
+    font-size: 0.912693rem;
+}
+
+.show-more-container a 
+{
+    padding: 10px 25px;
+    border: 2px solid var(--button-color);
+    color: var(--button-color);
+    transition: 0.3s ease-in-out;
+}
+
+.show-more-container a:hover 
+{
+    background: var(--button-color);
+    color: #fff;
+}
+/* product end */
+
+
+/* footer start */
+footer  
+{
+    margin-top: 50px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-top: 2px solid #e3e3e3;
+}
+
+footer form 
+{
+    display: flex;
+    gap: 10px;
+}
+
+footer form input 
+{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+footer form input:focus 
+{
+    outline: none;
+    box-shadow: none;
+}
+
+footer form button 
+{
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+footer .footer 
+{
+    border-bottom: 2px solid #e3e3e3;
+}
+/* footer end */
