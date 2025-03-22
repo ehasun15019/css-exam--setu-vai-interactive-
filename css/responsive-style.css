@@ -120,3 +120,20 @@
     }
 }
 /* cart.html (cart end) */
+
+
+/* checkout.html ( From start) */
+@media only screen and (max-width: 991px){
+    .checkout-content
+    {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .form-container 
+    {
+        padding: 0 30px;
+    }
+}
+/* checkout.html ( From end) */

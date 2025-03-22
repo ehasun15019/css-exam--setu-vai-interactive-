@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniro (cart)</title>
+    <title>Furniro (Home)</title>
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
 
     <!-- Own css -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/cart.css">
-    <link rel="stylesheet" href="./css/carts.css">
     <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/checkout.css">
     <link rel="stylesheet" href="./css/responsive-style.css">
 
     <!-- box icon cdn -->
@@ -74,9 +73,9 @@
     </nav>
     <!-- navbar end -->
 
+
     <!-- hero start -->
     <div class="shop-hero">
-        <img src="./img/cart/logo.png" alt="logo">
         <h2 class="fw-semibold">Shop</h2>
         <div class="d-flex gap-1">
             <a href="index.html" class="text-decoration-none fw-semibold text-black">Home</a>
@@ -86,54 +85,142 @@
     <!-- hero end -->
 
 
-    <!-- table start -->
-     <div class="container table-container">
+    <!-- From start -->
+    <div class="container mt-5 mb-4 form-container">
         <div class="row">
-            <div class="col-lg-7 col-md-12 col-sm-12">
-                <table>
-                    <tr class="first-tr">
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
-                    </tr>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="from-sec">
+                    <div class="from-content">
+                        <h3 class="fw-semibold">Billing details</h3>
+                    </div>
 
-                    <tr class="sec-tr">
-                        <th>
-                            <img src="./img/cart/table-image.png" alt="sofa">
-                        </th>
-                        <th><p class="fw-light m-0">Rs. 250,000.00</p></th>
-                        <th><span class="fw-light">1</span></th>
-                        <th><i class='bx bxs-trash-alt'></i></th>
-                    </tr>
-                </table>
+                    <div class="first-input d-flex gap-3 mt-4">
+                        <div class="item1">
+                            <p class="m-0">First Name</p>
+                            <input type="text" name="" id="inputs">
+                        </div>
+
+                        <div class="item2">
+                            <p class="m-0">Last Name</p>
+                            <input type="text" name="" id="inputs">
+                        </div>
+                    </div>
+
+                    <div class="second-input mt-3">
+                        <p class="m-0">Company Name (Optional)</p>
+                        <input type="text" name="" id="inputs">
+                    </div>
+
+                    <div class="third-input mt-3">
+                        <p class="m-0">Country / Region</p>
+
+                        <select name="" id="">
+                            <option value="">Bangladesh</option>
+                            <option value="">Sri Lanka</option>
+                            <option value="">America</option>
+                        </select>
+                    </div>
+
+                    <div class="fourt-input mt-3">
+                        <p class="m-0">Street address</p>
+                        <input type="text" name="" id="inputs">
+                    </div>
+
+                    <div class="fifth-input mt-3">
+                        <p class="m-0">Town / City</p>
+                        <input type="text" name="" id="inputs">
+                    </div>
+
+                    <div class="six-input mt-3">
+                        <p class="m-0">Province</p>
+
+                        <select name="" id="">
+                            <option value="">Western Province</option>
+                        </select>
+                    </div>
+
+                    <div class="seven-input mt-3">
+                        <p class="m-0">ZIP code</p>
+                        <input type="text" name="" id="inputs">
+                    </div>
+
+                    <div class="seven-input mt-3">
+                        <p class="m-0">Phone</p>
+                        <input type="text" name="" id="inputs">
+                    </div>
+
+                    <div class="seven-input mt-3">
+                        <p class="m-0">Email address</p>
+                        <input type="email" name="" id="inputs">
+                    </div>
+
+                    <div class="seven-input mt-3">
+                        <input type="email" name="" id="inputs" placeholder="Additional Information">
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="total-content">
-                    <h4>Cart Totals</h4>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="checkout-content">
+                    <div class="total-container d-flex justify-content-between border-bottom">
+                        <div class="product-sec">
+                            <h5 class="fw-semibold pb-3">Product</h5>
+                            <p class="m-0 text-secondary pb-3">Asgaard sofa x 1</p>
+                            <p class="m-0 pb-3">Subtotal</p>
+                            <p class="m-0 pb-3">Total</p>
+                        </div>
 
-                    <div class="d-flex item1 gap-3">
-                        <p class="m-0">Subtotal:</p>
-                        <p class="text-secondary">Rs. 250,000.00</p>
+                        <div class="subtotal-sec">
+                            <h5 class="fw-semibold pb-3">Subtotal</h5>
+                            <p class="m-0 text-secondary pb-3">Rs. 250,000.00</p>
+                            <p class="m-0 pb-3">Rs. 250,000.00</p>
+                            <h5 class="m-0 pb-3 fw-bold">Rs. 250,000.00</h5>
+                        </div>
                     </div>
 
-                    <div class="d-flex item2 gap-3">
-                        <p class="m-0">Total:</p>
-                        <p class="fw-semibold">Rs. 250,000.00</p>
-                    </div>
 
-                    <a href="checkout.html" class="btn btn-outline-dark">Checkout</a>
+                    <!-- .input radio sec start -->
+                     <div class="first-radio d-flex align-items-center gap-3 pt-3">
+                        <input type="radio" name="" id="">
+                        <p class="m-0">Direct Bank Transfer</p>
+                     </div>
+
+                     <div>
+                        <p class="m-0 text-secondary pt-3 pb-3">
+                            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                        </p>
+                     </div>
+
+                     <div class="first-radio d-flex align-items-center gap-3 pt-3">
+                        <input type="radio" name="" id="">
+                        <p class="m-0">Direct Bank Transfer</p>
+                     </div>
+
+                     <div class="first-radio d-flex align-items-center gap-3 pt-3">
+                        <input type="radio" name="" id="">
+                        <p class="m-0">Cash On Delivery</p>
+                     </div>
+
+                     <div class="pt-3 pb-3">
+                        Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy <a href="#" class="text-decoration-none text-black fw-bold">privacy policy</a>.
+                     </div>
+                    <!-- .input radio sec end -->
+
+                    <div class="d-flex align-items-center justify-content-center mt-3">
+                        <a href="#" class="text-decoration-none btn btn-outline-dark ">Place Order</a>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
-    <!-- table end -->
+    </div>
+    <!-- From end -->
+
+
 
 
 
     <!-- shipping start -->
-    <div class="shipping-sec mt-4">
+    <div class="shipping-sec">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-12 pb-4">
@@ -183,7 +270,6 @@
         </div>
     </div>
     <!-- shipping end -->
-
 
 
     <!-- footer start -->
