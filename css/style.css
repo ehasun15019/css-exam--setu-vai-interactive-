@@ -14,6 +14,28 @@
 
 
 /* nav start */
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar.scroll-on 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0,0,0,0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+
 nav .navbar-toggler:focus
 {
     outline: none;

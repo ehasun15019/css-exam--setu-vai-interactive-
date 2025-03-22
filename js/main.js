@@ -1,3 +1,19 @@
+// navbar scrolled start
+let nav = document.querySelector(".navbar");
+
+if (nav) {
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+      nav.classList.add("scroll-on");
+    } else {
+      nav.classList.remove("scroll-on");
+    }
+  };
+}
+// navbar scrolled end
+
+
+
 // cart.html img slider start
 function imgGallery() {
     const mainImg = document.querySelector('.details_img');
@@ -11,8 +27,6 @@ function imgGallery() {
  }
     
 imgGallery();
-
-
 
 
 // increment-decrement-sec start

@@ -137,3 +137,20 @@
     }
 }
 /* checkout.html ( From end) */
+
+
+/* contact.html (form start) */
+@media only screen and (max-width: 600px){
+    #from 
+    {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #from .column-2 
+    {
+        margin-top: 30px;
+    }
+}
+/* contact.html (form end) */
