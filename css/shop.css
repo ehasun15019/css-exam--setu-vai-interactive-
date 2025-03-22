@@ -14,3 +14,84 @@
     justify-content: center;
     align-items: center;
 }
+
+
+/* filter start */
+.filter-sec 
+{
+    padding: 15px 0;
+    background: var(--primary-color);
+}
+
+.filter-sec .iocn-sec img 
+{
+    width: 20px;
+    height: 20px;
+}
+
+.filter-sec .input-1 
+{
+    height: 42px;
+    width: 45px;
+    padding: 10px;
+}
+
+.filter-sec .input-2
+{
+    height: 42px;
+    width: 150px;
+    padding: 10px;
+}
+
+.filter-sec input:focus 
+{
+    outline: none;
+    box-shadow: none;
+}
+/* filter end */
+
+
+
+/* product start */
+.product .number-sec  
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.product .number-sec p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--primary-color);
+}
+
+.product .number-sec p:nth-child(1){
+    background: var(--button-color);
+    color: white;
+}
+
+.product .number-sec p:nth-child(4){
+    padding: 0 40px;
+}
+/* product end */
+
+
+/* shipping start */
+.shipping-sec 
+{
+    padding: 80px 0;
+    background: var(--primary-color);
+}
+
+.shipping-sec img 
+{
+    width: 50px;
+}
+/* shipping end */
