@@ -14,6 +14,40 @@ if (nav) {
 
 
 
+// swiper bullets start
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all Swiper pagination bullets
+  const bullets = document.querySelectorAll(".swiper-pagination-bullet");
+
+  bullets.forEach(bullet => {
+    // Set default background color
+    bullet.style.backgroundColor = "#A9A9A9";
+
+    // Add click event listener to each bullet
+    bullet.addEventListener("click", function () {
+      // Remove active styles from all bullets
+      bullets.forEach(b => {
+        b.style.backgroundColor = "#A9A9A9";
+        b.style.padding = "0"; // Reset padding
+      });
+
+      // Add active styles to clicked bullet
+      this.style.backgroundColor = "#B88E2F";
+      this.style.padding = "5px";
+    });
+  });
+
+  // Set initial active bullet (if any)
+  const activeBullet = document.querySelector(".swiper-pagination-bullet-active");
+  if (activeBullet) {
+    activeBullet.style.backgroundColor = "#B88E2F";
+    activeBullet.style.padding = "5px";
+  }
+});
+// swiper bullets end
+
+
+
 // cart.html img slider start
 function imgGallery() {
     const mainImg = document.querySelector('.details_img');

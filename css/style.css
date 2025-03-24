@@ -254,9 +254,41 @@ nav form img
 /* product end */
 
 
+/* slider start */
+.slider-sec 
+{
+    background: var(--primary-color);
+    padding: 120px 0;
+}
+
+.slider-content 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.slider-sec .explore-btn
+{
+    padding: 15px 35px;
+    background: var(--button-color);
+    color: white;
+    max-width: 172px;
+    width: 100%;
+}
+/* slider end */
+
+
 
 /* share start */
-/* .gallery {
+/* .share-sec 
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery 
+{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -265,15 +297,17 @@ nav form img
     margin: auto;
 }
 
-.grid-item {
+.grid-item 
+{
 width: 100%;
 height: auto;
 object-fit: cover;
 border-radius: 10px;
 }
 
-.item1 {
-grid-column: span 2;
+.item1 
+{
+grid-column: span 1;
 }
 
 .item2
